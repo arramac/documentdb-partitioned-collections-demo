@@ -1,4 +1,4 @@
-﻿namespace DocumentDB.Samples.OrderBy
+﻿namespace ElasticCollectionsDemo
 {
     using System;
     using System.Collections.Generic;
@@ -59,6 +59,8 @@
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.DefaultConnectionLimit = DefaultConnectionLimit;
             ThreadPool.SetMinThreads(MinThreadPoolSize, MinThreadPoolSize);
+
+            PointGenerator.Intialize();
 
             try
             {
@@ -135,6 +137,7 @@
             {
                 newDictionary["id"] = Guid.NewGuid().ToString();
                 newDictionary[partitionKeyProperty] = Guid.NewGuid().ToString();
+                newDictionary["location"] = PointGenerator.GetRandomPoint(Guid.NewGuid().GetHashCode());
 
                 try 
                 {

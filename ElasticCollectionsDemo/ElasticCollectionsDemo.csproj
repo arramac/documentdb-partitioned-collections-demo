@@ -61,12 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PointGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="DocumentClientHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="citylocations.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="KeyValue.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
