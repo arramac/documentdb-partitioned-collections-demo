@@ -131,7 +131,6 @@
              requestUnitsConsumed[taskId] = 0;
              string partitionKeyProperty = collection.PartitionKey.Paths[0].Replace("/", "");
              Dictionary<string, int> perPartitionCount = new Dictionary<string, int>();
-
              Dictionary<string, object> newDictionary = new Dictionary<string, object>(sampleDocument);
 
              for (var i = 0; i < 1000000; i++)
