@@ -7,8 +7,8 @@
     <ProjectGuid>{0AEFFA67-EC42-4BEB-998B-7F0B9379436D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ElasticCollectionsDemo</RootNamespace>
-    <AssemblyName>ElasticCollectionsDemo</AssemblyName>
+    <RootNamespace>DocumentDBBenchmark</RootNamespace>
+    <AssemblyName>DocumentDBBenchmark</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>b4fb0ea4</NuGetPackageImportStamp>
@@ -54,15 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PointGenerator.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="citylocations.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="KeyValue.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
